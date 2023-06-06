@@ -2,8 +2,21 @@
     xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
     xmlns="sap.m" xmlns:c="sap.ui.core">
     <SplitApp id="_IDGenSplitApp1">
-        <masterPages>
-            <c:Fragment fragmentName="shoprosarw.view.ProductFragment" type="XML"></c:Fragment>
+        <masterPages>  
+        <Page id="_IDGenPage1">
+            <IconTabBar id="idIconTabBarNoIcons"
+		                expanded="{device>/isNoPhone}"
+		                class="sapUiResponsiveContentPadding">
+		        <items>
+                    <IconTabFilter text="Products" key="info">
+                        <c:Fragment fragmentName="shoprosarw.view.ProductFragment" type="XML"></c:Fragment>
+                    </IconTabFilter>
+                    <IconTabFilter text="Categories" key="attachments">
+                        <c:Fragment fragmentName="shoprosarw.view.CategoryFragment" type="XML"></c:Fragment>
+                    </IconTabFilter>
+		        </items>
+	        </IconTabBar>            
+        </Page>
         </masterPages>
         <detailPages>
             <c:Fragment fragmentName="shoprosarw.view.ProductDetail" type="XML"></c:Fragment>

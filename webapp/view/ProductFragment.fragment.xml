@@ -2,17 +2,10 @@
     <l:VerticalLayout id="_IDGenVerticalLayout1" >
 	<Table id="idProductsTable"
 		inset="false"
-		selectionChange="onSelectionChange" 
+		selectionChange="onSelectionChangeProduct" 
 		mode="SingleSelectMaster" 
 		items="{path: '/Products'}">
-		<headerToolbar>
-			<OverflowToolbar id="OverflowToo0">
-				<content>
-					<Title id="title00" text="Products" level="H2"/>
-				</content>
-			</OverflowToolbar>
-		</headerToolbar>
-		<items id="items">
+		<items>
 			<ColumnListItem id="__item0">
 			    <cells>
 			        <Text text="{Name}" id="__text0"/>
