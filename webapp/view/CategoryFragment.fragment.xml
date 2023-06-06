@@ -1,0 +1,23 @@
+<c:FragmentDefinition xmlns:layout="sap.ui.layout" xmlns:m="sap.m" xmlns:c="sap.ui.core" xmlns="sap.m" xmlns:l="sap.ui.layout">
+    <l:VerticalLayout id="_IDGenVerticalLayoutk3" >
+	<Table id="idCategoriesTable"
+		inset="false"
+		selectionChange="onSelectionChangeCategory" 
+		mode="SingleSelectMaster" 
+		items="{path: '/Categories'}">
+		<items>
+			<ColumnListItem id="__item00">
+			    <cells>
+			        <Text text="{Name}" id="__text01"/>
+	            </cells>
+			</ColumnListItem>
+		</items>
+		<columns>
+			<Column id="col011"
+				width="12em">
+				<Text id="text011" text="Name" />
+			</Column>
+		</columns>
+	</Table>
+</l:VerticalLayout>
+</c:FragmentDefinition>

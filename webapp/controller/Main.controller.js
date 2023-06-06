@@ -12,11 +12,15 @@ sap.ui.define([
 
             },
 
-            onSelectionChange: function(oEvent){
+            onSelectionChangeProduct: function(oEvent){
                 var oItem = oEvent.getParameter("listItem");
                 var sPath = oItem.getBindingContext().getPath();
                 var oTable = this.getView().byId("vlayoutk1");
                 oTable.bindElement(sPath);
+            },
+
+            onSelectionChangeCategory: function(oEvent){
+                //TODO: display all products for this category
             }
 
         });

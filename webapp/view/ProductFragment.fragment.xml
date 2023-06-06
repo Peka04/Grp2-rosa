@@ -1,6 +1,6 @@
 <c:FragmentDefinition xmlns:layout="sap.ui.layout" xmlns:m="sap.m" xmlns:c="sap.ui.core" xmlns="sap.m" xmlns:l="sap.ui.layout">
     <l:VerticalLayout id="_IDGenVerticalLayout1" >
-	<Table id="table01"
+	<Table id="idProductsTable"
 		inset="false"
 		selectionChange="onSelectionChange" 
 		mode="SingleSelectMaster" 
