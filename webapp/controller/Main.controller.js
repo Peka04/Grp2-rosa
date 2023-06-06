@@ -9,10 +9,15 @@ sap.ui.define([
 
         return Controller.extend("shoprosarw.controller.Main", {
             onInit: function () {
-                var oHBox = this.getView().byId("vlayoutk1");
-                oHBox.bindElement("/Products(1)");
 
+            },
 
+            onSelectionChange: function(oEvent){
+                var oItem = oEvent.getParameter("listItem");
+                var sPath = oItem.getBindingContext().getPath();
+                var oTable = this.getView().byId("vlayoutk1");
+                oTable.bindElement(sPath);
             }
+
         });
     });

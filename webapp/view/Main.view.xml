@@ -3,10 +3,7 @@
     xmlns="sap.m" xmlns:c="sap.ui.core">
     <SplitApp id="_IDGenSplitApp1">
         <masterPages>
-            <Page id="masterPage">
-                <content>
-                </content>
-            </Page>
+            <c:Fragment fragmentName="shoprosarw.view.ProductFragment" type="XML"></c:Fragment>
         </masterPages>
         <detailPages>
             <c:Fragment fragmentName="shoprosarw.view.ProductDetail" type="XML"></c:Fragment>
