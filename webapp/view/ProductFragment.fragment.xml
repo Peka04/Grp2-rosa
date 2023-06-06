@@ -1,6 +1,6 @@
 <c:FragmentDefinition xmlns:layout="sap.ui.layout" xmlns:m="sap.m" xmlns:c="sap.ui.core" xmlns="sap.m" xmlns:l="sap.ui.layout">
     <l:VerticalLayout id="_IDGenVerticalLayout1" >
-	<Table id="idProductsTable"
+	<Table id="table01"
 		inset="false"
 		selectionChange="onSelectionChange" 
 		mode="SingleSelectMaster" 
@@ -12,7 +12,7 @@
 				</content>
 			</OverflowToolbar>
 		</headerToolbar>
-		<items id="items">
+		<items>
 			<ColumnListItem id="__item0">
 			    <cells>
 			        <Text text="{Name}" id="__text0"/>
@@ -31,5 +31,7 @@
 			</Column>
 		</columns>
 	</Table>
+	    <Input placeholder="00.00" width="200px" id="input0"/>
+		<Button text="Filtern" id="button0" press="onPress"/>
 </l:VerticalLayout>
 </c:FragmentDefinition>
