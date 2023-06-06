@@ -1,7 +1,15 @@
 <mvc:View controllerName="shoprosarw.controller.Main"
     xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
-    xmlns="sap.m">
-    <Page id="page" title="{i18n>title}">
-        <content />
-    </Page>
+    xmlns="sap.m" xmlns:c="sap.ui.core">
+    <SplitApp id="_IDGenSplitApp1">
+        <masterPages>
+            <Page id="masterPage">
+                <content>
+                </content>
+            </Page>
+        </masterPages>
+        <detailPages>
+            <c:Fragment fragmentName="shoprosarw.view.ProductDetail" type="XML"></c:Fragment>
+        </detailPages>
+    </SplitApp>
 </mvc:View>

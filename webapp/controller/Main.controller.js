@@ -9,6 +9,9 @@ sap.ui.define([
 
         return Controller.extend("shoprosarw.controller.Main", {
             onInit: function () {
+                var oHBox = this.getView().byId("vlayoutk1");
+                oHBox.bindElement("/Products(1)");
+
 
             }
         });
