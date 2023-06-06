@@ -1,0 +1,31 @@
+<c:FragmentDefinition xmlns:layout="sap.ui.layout" xmlns:m="sap.m" xmlns:c="sap.ui.core" xmlns="sap.m" xmlns:l="sap.ui.layout">
+
+    <l:VerticalLayout id="_IDGenVerticalLayout1" >
+	<Table id="idProductsTable"
+		inset="false"
+		items="Name">
+		<headerToolbar>
+			<OverflowToolbar id="OverflowToo0">
+				<content>
+					<Title id="title00" text="Products" level="H2"/>
+				</content>
+			</OverflowToolbar>
+		</headerToolbar>
+		<columns>
+			<Column id="col01"
+				width="12em">
+				<Text id="text01" text="Name" />
+			</Column>
+		
+		
+			<Column id="col02"
+				hAlign="End">
+				<Text id="text02" text="Price" />
+			</Column>
+		</columns>
+		
+	</Table>
+
+</l:VerticalLayout>
+
+</c:FragmentDefinition>
