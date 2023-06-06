@@ -1,0 +1,60 @@
+<c:FragmentDefinition xmlns:layout="sap.ui.layout" xmlns:m="sap.m" xmlns:c="sap.ui.core" xmlns="sap.m" xmlns:l="sap.ui.layout">
+    <l:VerticalLayout id="vlayoutk1">
+<l:content>
+    <HBox width="100%" id="hbox0">
+        <items>
+            <Text xmlns="sap.m" text="Name: " id="text6"/>
+            <Text xmlns="sap.m" text="{Name}" id="text7"/>
+        </items>
+    </HBox>
+    <HBox width="100%" id="hbox1">
+        <items>
+            <Text xmlns="sap.m" text="Preis: " id="text8"/>
+            <Text xmlns="sap.m" text="{Price}" id="text9"/>
+        </items>
+    </HBox>
+    <HBox width="100%" id="hbox0_1686054333970">
+    <items>
+        <Text xmlns="sap.m" text="ID" id="text2"/>
+        <Text xmlns="sap.m" text="{ID}" id="text3"/>
+    </items>
+    </HBox>
+    <HBox width="100%" id="hbox1_1686054416274">
+        <items>
+            <Text xmlns="sap.m" text="Beschreibung" id="text4"/>
+            <Text xmlns="sap.m" text="{Description}" id="text5"/>
+        </items>
+    </HBox>
+    <HBox width="100%" id="hbox2">
+        <items>
+            <Text xmlns="sap.m" text="Erscheinungsdatum" id="text6_1686054498507"/>
+            <Text xmlns="sap.m" text="{ReleaseDate}" id="text7_1686054519120"/>
+        </items>
+    </HBox>
+    <HBox width="100%" id="hbox3">
+        <items>
+            <Text xmlns="sap.m" text="Discontinued Date" id="text9_1686054827197"/>
+            <Text xmlns="sap.m" text="{DiscontinuedDate}" id="text10"/>
+        </items>
+    </HBox>
+    <HBox width="100%" id="hbox4">
+        <items>
+            <Text xmlns="sap.m" text="Rating" id="text11"/>
+            <Text xmlns="sap.m" text="{Rating}" id="text12"/>
+        </items>
+    </HBox>
+    <HBox width="100%" id="hbox5">
+        <items>
+            <Text xmlns="sap.m" text="Supplier" id="text13"/>
+            <Text xmlns="sap.m" text="{Supplier/Name}" id="text14"/>
+        </items>
+    </HBox>
+    <HBox width="100%" id="hbox6">
+        <items>
+            <Text xmlns="sap.m" text="Kategorie" id="text15"/>
+            <Text xmlns="sap.m" text="{Category/Name}" id="text17"/>
+        </items>
+    </HBox>
+</l:content>
+</l:VerticalLayout>
+</c:FragmentDefinition>
