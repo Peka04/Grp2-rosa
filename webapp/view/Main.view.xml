@@ -9,10 +9,10 @@
 		                class="sapUiResponsiveContentPadding"
                         select="onIconTabSelect">
 		        <items>
-                    <IconTabFilter id="_IDGenIconTabFilter1" text="Products" key="info">
+                    <IconTabFilter id="_IDGenIconTabFilter1" text="Produkte" key="info">
                         <c:Fragment fragmentName="shoprosarw.view.ProductFragment" type="XML"></c:Fragment>
                     </IconTabFilter>
-                    <IconTabFilter id="_IDGenIconTabFilter2" text="Categories" key="attachments">
+                    <IconTabFilter id="_IDGenIconTabFilter2" text="Kategorien" key="attachments">
                         <c:Fragment fragmentName="shoprosarw.view.CategoryFragment" type="XML"></c:Fragment>
                     </IconTabFilter>
 		        </items>

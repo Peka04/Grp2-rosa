@@ -19,7 +19,7 @@
 			</Column>
 			<Column id="col0211"
 				hAlign="End">
-				<Text id="text0211" text="Price" />
+				<Text id="text0211" text="Preis" />
 			</Column>
 			<Column id="col0213"
 				hAlign="End">

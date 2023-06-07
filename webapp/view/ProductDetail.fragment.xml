@@ -33,7 +33,7 @@
     </HBox>
     <HBox width="100%" id="hbox3">
         <items>
-            <Text xmlns="sap.m" text="Discontinued Date" id="text9_1686054827197"/>
+            <Text xmlns="sap.m" text="Auslaufdatum" id="text9_1686054827197"/>
             <Text xmlns="sap.m" text="{DiscontinuedDate}" id="text10"/>
         </items>
     </HBox>
@@ -45,7 +45,7 @@
     </HBox>
     <HBox width="100%" id="hbox5" >
         <items>
-            <Text xmlns="sap.m" text="Supplier" id="text13"/>
+            <Text xmlns="sap.m" text="Hersteller" id="text13"/>
             <!-- <Text xmlns="sap.m" text="{path: 'Name', parameters: {expand: 'Supplier'}}" id="text14"/> -->
         </items>
     </HBox>
