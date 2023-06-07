@@ -31,10 +31,11 @@
 			</Column>
 		</columns>
 	</Table>
-	<m:Label id="lab00" text="price von"></m:Label>
+	<m:Label id="lab00" text="preis von" />
 	    <Input placeholder="€" width="100px" id="input00" />
-		<m:Label id="lab01" text="price bis"></m:Label>
+		<m:Label id="lab01" text="preis bis" />
 		<Input placeholder="€" width="100px" id="input01" value="{path:'/Price', type: 'sap.ui.model.type.Integer' , constraints:{minimum:1, maximum:20000000}}"/>
+		<m:Label id="lab02" text="Filtern nach:" />
 		<Input placeholder="A...Z" width="200px" id="input02"/>
 		<Button text="Filtern" id="button00" press="onPress"/>
 		<Button text="Reset" id="button01" press="onReset"/>

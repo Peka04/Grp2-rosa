@@ -61,6 +61,8 @@ sap.ui.define([
 			    oInput.setValue(null);
                 var oInput1 = this.getView().byId("input01");
 			    oInput1.setValue(null);
+                var oInput1 = this.getView().byId("input02");
+			    oInput2.setValue(null);
             },
 
             onSort: function(oEvent) {
