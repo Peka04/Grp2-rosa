@@ -5,7 +5,7 @@
     xmlns="sap.m"
     xmlns:l="sap.ui.layout">
     <VBox id="_IDGenVBox1" class="sapUiSmallMargin">
-        <f:SimpleForm id="vlayoutk1" editable="false" layout="ResponsiveGridLayout" title="Address" labelSpanXL="3" labelSpanL="3" labelSpanM="3" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="4" emptySpanL="4" emptySpanM="4" emptySpanS="0" columnsXL="1" columnsL="1" columnsM="1" singleContainerFullSize="false">
+        <f:SimpleForm id="vlayoutk1" editable="false" layout="ResponsiveGridLayout" title="Produktdetails" labelSpanXL="3" labelSpanL="3" labelSpanM="3" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="4" emptySpanL="4" emptySpanM="4" emptySpanS="0" columnsXL="1" columnsL="1" columnsM="1" singleContainerFullSize="false">
             <f:content>
                 <m:Label xmlns="sap.m" text="Name " id="text6"/>
                 <Text xmlns="sap.m" text="{Name}" id="text7"/>
