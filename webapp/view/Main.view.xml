@@ -4,6 +4,7 @@
     <SplitApp id="_IDGenSplitApp1">
         <masterPages>  
         <Page id="_IDGenPage1">
+        <content>
             <IconTabBar id="idIconTabBarNoIcons"
 		                expanded="{device>/isNoPhone}"
 		                class="sapUiResponsiveContentPadding"
@@ -16,7 +17,8 @@
                         <c:Fragment fragmentName="shoprosarw.view.CategoryFragment" type="XML"></c:Fragment>
                     </IconTabFilter>
 		        </items>
-	        </IconTabBar>            
+	        </IconTabBar>   
+            </content>         
         </Page>
         </masterPages>
         <detailPages>
