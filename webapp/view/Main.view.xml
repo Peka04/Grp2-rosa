@@ -6,12 +6,13 @@
         <Page id="_IDGenPage1">
             <IconTabBar id="idIconTabBarNoIcons"
 		                expanded="{device>/isNoPhone}"
-		                class="sapUiResponsiveContentPadding">
+		                class="sapUiResponsiveContentPadding"
+                        select="onIconTabSelect">
 		        <items>
-                    <IconTabFilter text="Products" key="info">
+                    <IconTabFilter id="_IDGenIconTabFilter1" text="Produkte" key="info">
                         <c:Fragment fragmentName="shoprosarw.view.ProductFragment" type="XML"></c:Fragment>
                     </IconTabFilter>
-                    <IconTabFilter text="Categories" key="attachments">
+                    <IconTabFilter id="_IDGenIconTabFilter2" text="Kategorien" key="attachments">
                         <c:Fragment fragmentName="shoprosarw.view.CategoryFragment" type="XML"></c:Fragment>
                     </IconTabFilter>
 		        </items>
@@ -19,7 +20,12 @@
         </Page>
         </masterPages>
         <detailPages>
-            <c:Fragment fragmentName="shoprosarw.view.ProductDetail" type="XML"></c:Fragment>
+            <Page id="_IDGenPage2">
+                <c:Fragment fragmentName="shoprosarw.view.ProductDetail" type="XML"></c:Fragment>
+            </Page>
+            <Page id="_IDGenPage3">
+                <c:Fragment fragmentName="shoprosarw.view.CategoryDetail" type="XML"></c:Fragment>
+            </Page>
         </detailPages>
     </SplitApp>
 </mvc:View>

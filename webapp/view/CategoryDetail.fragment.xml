@@ -1,0 +1,31 @@
+<c:FragmentDefinition xmlns:layout="sap.ui.layout" xmlns:m="sap.m" xmlns:c="sap.ui.core" xmlns="sap.m" xmlns:l="sap.ui.layout">
+    <l:VerticalLayout id="_IDGenVerticalLayout3" >
+	<Table id="idCategoriesTable1"
+		inset="false"
+		>
+		<items>
+			<ColumnListItem id="__item000">
+			    <cells>
+			        <Text text="{Name}" id="__text000"/>
+			        <Text text="{Price}" id="__text111"/>
+                    <Text text="{Rating}" id="_text211"/>
+	            </cells>
+			</ColumnListItem>
+		</items>
+		<columns>
+			<Column id="col0111"
+				width="12em">
+				<Text id="text0111" text="Name" />
+			</Column>
+			<Column id="col0211"
+				hAlign="End">
+				<Text id="text0211" text="Preis" />
+			</Column>
+			<Column id="col0213"
+				hAlign="End">
+				<Text id="text0213" text="Rating" />
+			</Column>
+		</columns>
+	</Table>
+</l:VerticalLayout>
+</c:FragmentDefinition>
