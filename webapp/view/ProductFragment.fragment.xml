@@ -35,7 +35,7 @@
 	    <Input placeholder="€" width="100px" id="input00" />
 		<m:Label id="lab01" text="price bis"></m:Label>
 		<Input placeholder="€" width="100px" id="input01" value="{path:'/Price', type: 'sap.ui.model.type.Integer' , constraints:{minimum:1, maximum:20000000}}"/>
-		<!-- <Input placeholder="€" width="100px" id="input01" value="{path:'/Price', type: 'sap.ui.model.type.Integer' , constraints:{minimum:1, maximum:20.000.000}}"/> -->
+		<Input placeholder="A...Z" width="200px" id="input02"/>
 		<Button text="Filtern" id="button00" press="onPress"/>
 		<Button text="Reset" id="button01" press="onReset"/>
 		<Button text="Sortieren" id="button02" press="onSort"/>

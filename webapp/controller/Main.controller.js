@@ -43,9 +43,13 @@ sap.ui.define([
                 var sPrice = oInput.getValue();
                 var oInput1 = this.getView().byId("input01");
                 var sPrice1 = oInput1.getValue();
+                var oInput2 = this.getView().byId("input02");
+                var sName = oInput2.getValue();
                 var oFilter = new sap.ui.model.Filter("Price", sap.ui.model.FilterOperator.BT, sPrice, sPrice1);
+                var oFilter1 = new sap.ui.model.Filter("Name", sap.ui.model.FilterOperator.StartsWith, sName);
                 var oTable = this.getView().byId("idProductsTable");
                 oTable.getBinding("items").filter([oFilter]);
+                oTable.getBinding("items").filter([oFilter1]);
                 
             },
 
