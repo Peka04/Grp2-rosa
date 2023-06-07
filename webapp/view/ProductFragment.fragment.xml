@@ -2,9 +2,16 @@
     <l:VerticalLayout id="_IDGenVerticalLayout1" >
 	<Table id="idProductsTable"
 		inset="false"
-		selectionChange="onSelectionChangeProduct" 
+		selectionChange="onSelectionChange" 
 		mode="SingleSelectMaster" 
 		items="{path: '/Products'}">
+		<headerToolbar>
+			<OverflowToolbar id="OverflowToo0">
+				<content>
+					<Title id="title00" text="Products" level="H2"/>
+				</content>
+			</OverflowToolbar>
+		</headerToolbar>
 		<items>
 			<ColumnListItem id="__item0">
 			    <cells>
@@ -24,5 +31,7 @@
 			</Column>
 		</columns>
 	</Table>
+	    <Input placeholder="00.00" width="200px" id="input0"/>
+		<Button text="Filtern" id="button0" press="onPress"/>
 </l:VerticalLayout>
 </c:FragmentDefinition>

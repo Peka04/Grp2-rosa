@@ -8,6 +8,8 @@ sap.ui.define(
       return BaseController.extend("shoprosarw.controller.App", {
         onInit() {
         }
+
+
       });
     }
   );
