@@ -9,7 +9,7 @@ sap.ui.define([
         "use strict";
 
         return Controller.extend("shoprosarw.controller.Main", {
-
+            
             onSelectionChangeProduct: function(oEvent){
                 this.getView().byId("stepInput").setValue("0");
                 this.getView().byId("stepInput").setEnabled(true);
@@ -60,6 +60,13 @@ sap.ui.define([
                 oTable.getBinding("items").filter([oFilter]);
                 
             },
+            onPress1: function(oEvent) {
+                var oInput2 = this.getView().byId("input02");
+                var sName = oInput2.getValue();
+                var oFilter1 = new sap.ui.model.Filter("Name", sap.ui.model.FilterOperator.StartsWith, sName);
+                var oTable = this.getView().byId("idProductsTable");
+                oTable.getBinding("items").filter([oFilter1]);
+            },
 
             onReset: function(oEvent) {
                 var oTable = this.getView().byId("idProductsTable");
@@ -69,7 +76,10 @@ sap.ui.define([
 			    oInput.setValue(null);
                 var oInput1 = this.getView().byId("input01");
 			    oInput1.setValue(null);
+                var oInput2 = this.getView().byId("input02");
+			    oInput2.setValue(null);
             },
+
 
             onSort: function(oEvent) {
                 var oSorter = new sap.ui.model.Sorter("Price", false);
