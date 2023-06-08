@@ -1,4 +1,4 @@
-<c:FragmentDefinition xmlns:layout="sap.ui.layout" xmlns:m="sap.m" xmlns:c="sap.ui.core" xmlns="sap.m" xmlns:l="sap.ui.layout">
+<c:FragmentDefinition xmlns:form="sap.ui.layout.form" xmlns:layout="sap.ui.layout" xmlns:m="sap.m" xmlns:c="sap.ui.core" xmlns="sap.m" xmlns:l="sap.ui.layout">
     <l:VerticalLayout id="_IDGenVerticalLayout1" >
 	<Table id="idProductsTable"
 		inset="false"
@@ -31,14 +31,22 @@
 			</Column>
 		</columns>
 	</Table>
+	<form:SimpleForm id="sform00">
+		<m:Label id="lab02" text="Filtern nach" />
+		<Input placeholder="A...Z" width="100px" id="input02" class="myInput"/>
+		<Button text="Filtern" id="button03" press="onPress1"/>
+		</form:SimpleForm>
+	<form:SimpleForm id="sform01">
 	<m:Label id="lab00" text="preis von" />
-	    <Input placeholder="€" width="100px" id="input00" />
+	    <Input placeholder="€" width="80px" id="input00" />
 		<m:Label id="lab01" text="preis bis" />
-		<Input placeholder="€" width="100px" id="input01" value="{path:'/Price', type: 'sap.ui.model.type.Integer' , constraints:{minimum:1, maximum:20000000}}"/>
-		<m:Label id="lab02" text="Filtern nach:" />
-		<Input placeholder="A...Z" width="200px" id="input02"/>
+		<Input placeholder="€" width="80px" id="input01" value="{path:'Price', type: 'sap.ui.model.type.Integer' , constraints:{minimum:1, maximum:20000000}}"/>			
 		<Button text="Filtern" id="button00" press="onPress"/>
+		</form:SimpleForm>	
+		<form:SimpleForm id="sform02">
 		<Button text="Reset" id="button01" press="onReset"/>
 		<Button text="Sortieren" id="button02" press="onSort"/>
+		</form:SimpleForm>
+		
 </l:VerticalLayout>
 </c:FragmentDefinition>
