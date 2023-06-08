@@ -1,36 +1,31 @@
-<c:FragmentDefinition xmlns:layout="sap.ui.layout"
-    xmlns:f="sap.ui.layout.form"
-    xmlns:m="sap.m"
-    xmlns:c="sap.ui.core"
-    xmlns="sap.m"
-    xmlns:l="sap.ui.layout">
+<c:FragmentDefinition xmlns:layout="sap.ui.layout" xmlns:f="sap.ui.layout.form" xmlns:m="sap.m" xmlns:c="sap.ui.core" xmlns="sap.m" xmlns:l="sap.ui.layout">
     <VBox id="_IDGenVBox1" class="sapUiSmallMargin">
         <f:SimpleForm id="vlayoutk1" editable="false" layout="ResponsiveGridLayout" title="Produktdetails" labelSpanXL="3" labelSpanL="3" labelSpanM="3" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="4" emptySpanL="4" emptySpanM="4" emptySpanS="0" columnsXL="1" columnsL="1" columnsM="1" singleContainerFullSize="false">
             <f:content>
-                <m:Label xmlns="sap.m" text="Name " id="text6"/>
+                <Label xmlns="sap.m" text="Name " id="text6"/>
                 <Text xmlns="sap.m" text="{Name}" id="text7"/>
-                <m:Label xmlns="sap.m" text="Preis " id="text8"/>
+                <Label xmlns="sap.m" text="Preis " id="text8"/>
                 <Text xmlns="sap.m" text="{Price}" id="text9"/>
-                <m:Label xmlns="sap.m" text="ID" id="text2"/>
+                <Label xmlns="sap.m" text="ID" id="text2"/>
                 <Text xmlns="sap.m" text="{ID}" id="text3"/>
-                <m:Label xmlns="sap.m" text="Beschreibung" id="text4"/>
+                <Label xmlns="sap.m" text="Beschreibung" id="text4"/>
                 <Text xmlns="sap.m" text="{Description}" id="text5"/>
-                <m:Label xmlns="sap.m" text="Erscheinungsdatum" id="text6_1686054498507"/>
+                <Label xmlns="sap.m" text="Erscheinungsdatum" id="text6_1686054498507"/>
                 <Text xmlns="sap.m" text="{ReleaseDate}" id="text7_1686054519120"/>
-                <m:Label xmlns="sap.m" text="Auslaufdatum" id="text9_1686054827197"/>
+                <Label xmlns="sap.m" text="Auslaufdatum" id="text9_1686054827197"/>
                 <Text xmlns="sap.m" text="{DiscontinuedDate}" id="text10"/>
-                <m:Label xmlns="sap.m" text="Rating" id="text11"/>
+                <Label xmlns="sap.m" text="Rating" id="text11"/>
                 <RatingIndicator xmlns="sap.m" value="{Rating}" id="text12"/>
-                <m:Label xmlns="sap.m" text="Hersteller" id="text13"/>
+                <Label xmlns="sap.m" text="Hersteller" id="text13"/>
                 
-                <m:Label xmlns="sap.m" text="Kategorie" id="text15"/>
+                <Label xmlns="sap.m" text="Kategorie" id="text15"/>
             </f:content>
         </f:SimpleForm>
-        <m:StepInput change="onAmountChange" min="0" id="stepInput" enabled="false"></m:StepInput>
+        <Button press="onAmountChange" id="stepInput" enabled="false" text="Hinzufügen" icon="sap-icon://add"/>
         <f:SimpleForm>
-            <Label text="Gesamtpreis"></Label>
-            <m:Input editable="false" id="fullAmount" value="{orders>/amount}" width="25%"></m:Input>
+            <Label text="Gesamtpreis"/>
+            <Input editable="false" id="fullAmount" value="{orders>/amount}" width="25%"/>
         </f:SimpleForm>
-        <m:Button text="Bestellen" press="sendOrder"></m:Button>
+        <Button text="Bestellen" press="sendOrder"/>
     </VBox>
 </c:FragmentDefinition>

@@ -11,7 +11,6 @@ sap.ui.define([
         return Controller.extend("shoprosarw.controller.Main", {
             
             onSelectionChangeProduct: function(oEvent){
-                this.getView().byId("stepInput").setValue("0");
                 this.getView().byId("stepInput").setEnabled(true);
 
                 var oItem = oEvent.getParameter("listItem");
@@ -88,7 +87,6 @@ sap.ui.define([
             },
 
              onAmountChange: function(oEvent){
-                var sValue = oEvent.getSource().getValue();
                 var sPrice = this.getView().byId("text9").getText();
                 this.wk = this.getOwnerComponent().getModel("orders");
                 let nOldAmount = this.wk.getProperty("/amount");
@@ -109,10 +107,13 @@ sap.ui.define([
                         actions: [MessageBox.Action.YES],
                     }
                 );
-                this.getView().byId("stepInput").setValue("0");
                 this.wk.setProperty("/amount", 0);
                 this.wk.setProperty("/warenkorb", new Array());
-            }
-            
+            },
+
+            deleteOrder: function(){
+                this.wk.setProperty("/amount", 0);
+                this.wk.setProperty("/warenkorb", new Array());
+            } 
         });
     });
