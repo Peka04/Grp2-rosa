@@ -73,6 +73,12 @@
         "dataSource": "mainService",
         "preload": true,
         "settings": {}
+      },
+      "orders": {
+       "type": "sap.ui.model.json.JSONModel",
+       "settings": {},
+       "preload": false,
+        "uri": "model/bestellungen.json"
       }
     },
     "resources": {

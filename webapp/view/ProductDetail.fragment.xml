@@ -25,5 +25,11 @@
                 <m:Label xmlns="sap.m" text="Kategorie" id="text15"/>
             </f:content>
         </f:SimpleForm>
+        <m:StepInput change="onAmountChange" min="0" id="stepInput" enabled="false"></m:StepInput>
+        <f:SimpleForm>
+            <Label text="Gesamtpreis"></Label>
+            <m:Input editable="false" id="fullAmount" value="{orders>/amount}" width="25%"></m:Input>
+        </f:SimpleForm>
+        <m:Button text="Bestellen" press="sendOrder"></m:Button>
     </VBox>
 </c:FragmentDefinition>

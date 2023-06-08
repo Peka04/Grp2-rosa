@@ -24,6 +24,7 @@
         <detailPages>
             <Page id="_IDGenPage2">
                 <c:Fragment fragmentName="shoprosarw.view.ProductDetail" type="XML"></c:Fragment>
+                <c:Fragment fragmentName="shoprosarw.view.Order" type="XML"></c:Fragment>
             </Page>
             <Page id="_IDGenPage3">
                 <c:Fragment fragmentName="shoprosarw.view.CategoryDetail" type="XML"></c:Fragment>
