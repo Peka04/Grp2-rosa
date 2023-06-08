@@ -20,8 +20,9 @@
                 <m:Label xmlns="sap.m" text="Auslaufdatum" id="text9_1686054827197"/>
                 <Text xmlns="sap.m" text="{DiscontinuedDate}" id="text10"/>
                 <m:Label xmlns="sap.m" text="Rating" id="text11"/>
-                <Text xmlns="sap.m" text="{Rating}" id="text12"/>
+                <RatingIndicator xmlns="sap.m" value="{Rating}" id="text12"/>
                 <m:Label xmlns="sap.m" text="Hersteller" id="text13"/>
+                
                 <m:Label xmlns="sap.m" text="Kategorie" id="text15"/>
             </f:content>
         </f:SimpleForm>

@@ -8,9 +8,7 @@ sap.ui.define([
         "use strict";
 
         return Controller.extend("shoprosarw.controller.Main", {
-
-
-
+            
             onSelectionChangeProduct: function(oEvent){
                 var oItem = oEvent.getParameter("listItem");
                 var sPath = oItem.getBindingContext().getPath();
